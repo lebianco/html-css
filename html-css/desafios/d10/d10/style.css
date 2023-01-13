@@ -13,6 +13,8 @@
 }
 
 header {
+    min-height: 150px;
+    padding-top: 40px;
     color: white;
     text-align: center;
     text-shadow: rgba(0, 0, 0, 0.623) 0.1em 0.1em 0.2em;
@@ -41,26 +43,39 @@ nav>a {
     color: white;
     padding: 5px;
     margin-left: 15px;
+    transition-duration: 0.5s;
 }
 
 nav>a:hover {
     padding: 5px;
-    background-color: rgba(71, 124, 71, 0.438);
+    background-color: rgba(120, 223, 120, 0.438);
     border-radius: 5px;
 }
 
 body {
     background-color: rgb(230, 225, 162);
     margin: 0px;
+
 }
 
 main {
     background-color: white;
-    width: 800px;
+    max-width: 1000px;
+    min-width: 300px;
     margin: auto;
     padding: 10px;
     border-radius: 0px 0px 5px 5px;
-    box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.466);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.466);
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
 }
 
 footer {
@@ -85,19 +100,29 @@ p {
 }
 
 ul {
-    list-style: none;
+    list-style-type: '\2714\00A0\00A0';
     columns: 2;
 }
 
 li::before {
-    content: '*';
     margin-right: 4px;
+}
+
+abbr {
+    text-decoration: underline;
 }
 
 div#video {
     background-color: darkgreen;
     padding: 5px;
     margin: -10px;
+}
+
+iframe {
+    padding: 10px;
+    display: block;
+    margin: auto;
+    width: 90%;
 }
 
 div#extra {
@@ -132,10 +157,11 @@ h1 {
 h2 {
     font-family: Idroid;
     color: green;
-    background-image: linear-gradient(to right, rgba(0, 128, 0, 0.334), white);
+    background-image: linear-gradient(to right, rgba(0, 128, 0, 0.334), transparent);
     margin: 5px;
     text-indent: 0.5em;
 }
+
 
 strong {
     color: green;
