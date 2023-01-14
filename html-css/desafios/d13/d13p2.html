@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafiao da tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 500px;
+            text-align: center;
+        }
+
+        table {
+            border: 5px solid black;
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .merge {
+            background-color: #33ff3342;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Desafio de tabela mesclagem</h1>
+    <table>
+        <tr>
+            <td colspan="4" class="merge">A</td>
+            <td rowspan="4" class="merge">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4" class="merge">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="merge">N</td>
+        </tr>
+    </table>
+</body>
+
+</html>
